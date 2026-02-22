@@ -1,8 +1,9 @@
-stage('Build React') {
-    steps {
-        sh '''
-            npm install
-            npm run build
-        '''
-    }
-}
+#!/bin/bash
+
+echo "Installing dependencies..."
+npm install
+
+echo "Building React app..."
+npm run build
+
+echo "Build completed successfully!"
