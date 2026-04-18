@@ -11,7 +11,7 @@ pipeline {
             steps {
                 git branch: 'main',
                     url: 'https://github.com/ravindranadh56/Frontend_S3_webhosting.git',
-                    credentialsId: 'aws-credentials'
+                    credentialsId: 'aws-creds'
             }
         }
 
